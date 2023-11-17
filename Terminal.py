@@ -9,7 +9,8 @@ from bs4 import BeautifulSoup
 # Global variables
 
 views = None
-print("Source Code: \n")
+
+print("\nSource Code: https://github.com/AverageCodingKid/Source-Code/blob/main/Terminal.py \n\nInstall Python: python.org\n")
 
 def update_view_count():
     try:
