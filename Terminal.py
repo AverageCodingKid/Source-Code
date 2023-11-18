@@ -111,6 +111,18 @@ while True:
     elif data == "end":
         break
 
+    elif data == "shutdown":
+        perm = input("Are you sure you want to shut down Y|N:")
+        if perm == "y":
+            print("Shut Down Started")
+            time.sleep(1.5)
+            os.system("shutdown /s /t 0")
+            
+        elif perm == "n":
+            continue
+        else:
+            print("Invalid, try again later.")    
+
     elif "search" in data:
         web = input("Enter website: ")
         webbrowser.open(web)
