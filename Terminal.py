@@ -6,6 +6,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
+#python -m PyInstaller --onefile
+
 # Global variables
 
 views = None
