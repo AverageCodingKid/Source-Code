@@ -1,6 +1,7 @@
 import time
 import pyfiglet
 import pyperclip
+import os
 
 print("Welcome to PYConverter 🚀\n")
 
@@ -11,7 +12,9 @@ while True:
         text = pyfiglet.figlet_format(userin)
     if userin.lower() == "end":
         break
-        
+    if userin.lower() == "clear":
+        os.system("cls")
+        continue
 
     time.sleep(1.5)
     print("Generated Text Successfully ✔")
